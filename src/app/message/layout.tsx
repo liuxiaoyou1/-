@@ -1,4 +1,4 @@
-export default function HomeLayout({
+export default function MessageLayout({
     children,
   }: {
     children: React.ReactNode
