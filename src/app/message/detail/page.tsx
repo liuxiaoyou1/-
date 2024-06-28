@@ -1,10 +1,10 @@
-import Footer from "@/app/components/Footer/Footer"
+import HeaderNav from "@/app/components/Header/HeaderNav"
 
 
 const MessageDetail=()=>{
-    return <div>
-       message
-    </div>
+    return <>
+    <HeaderNav></HeaderNav>
+    </>
 }
 
 export default MessageDetail

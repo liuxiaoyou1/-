@@ -1,10 +1,10 @@
 
-import Footer from "@/app/components/Footer/Footer"
+import HeaderNav from "@/app/components/Header/HeaderNav"
 
 const ShopHome=()=>{
-    return <div>
-        shop
-    </div>
+    return  <>
+    <HeaderNav></HeaderNav>
+    </>
 }
 
 export default ShopHome

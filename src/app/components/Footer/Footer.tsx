@@ -34,7 +34,7 @@ const Footer = () => {
       href: "/add",
     },
     { label: "消息", href: "/message/detail" },
-    { label: "我", href: "/profile/detail" },
+    { label: "我", href: "/profile/me" },
   ];
 
   const handleNavItemClick = (item: INavItem) => {
