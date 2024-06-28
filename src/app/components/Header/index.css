@@ -1,0 +1,6 @@
+.dyn-h{
+    height:var(--common-header-height) ;
+    padding: 0 20rem;
+    font-size: 24rem;
+    
+}

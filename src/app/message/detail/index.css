@@ -1,0 +1,10 @@
+.dyn-msg-h{
+    height: calc(var(--vh, 1vh)* 100);
+}
+.scroll{
+    padding-bottom: var(--footer-height);
+}
+.scroll-wrapper{
+    touch-action: pan-y;
+    overflow: auto;
+}

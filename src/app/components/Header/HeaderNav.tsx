@@ -2,35 +2,35 @@
 import React from "react";
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import RouteCinfig from "@/app/utils/route/config";
 import HomeNav from "./homeNav/page";
 import ShopNav from "./shopNav/page";
 import MsgNav from "./msgNav/page";
 import MeNav from "./meNav/page";
+import './index.css'
 
 const HeaderNav = () => {
   const pathname = usePathname();
-  
-
   const renderHeader = () => {
     switch (pathname) {
-      case "/":
+      case RouteCinfig.HomeRoute:
         return <HomeNav></HomeNav>;
-      case "/shop/home":
+      case RouteCinfig.ShopRoute:
          return <ShopNav></ShopNav>;
-      case "/message/detail":
+      case RouteCinfig.MsgRoute:
         return <MsgNav></MsgNav>;
-      case "/profile/me":
+      case RouteCinfig.MeRoute:
         return <MeNav></MeNav>
       default:
 
         break;
     }
   };
-  return <div className="text-[16rem] text">
+  return <header className="text-[16rem] text">
    {
     renderHeader()
    }
-  </div>;
+  </header>;
 };
 
 export default HeaderNav;

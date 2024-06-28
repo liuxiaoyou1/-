@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import "./index.css";
+import RouteCinfig from '@/app/utils/route/config'
 
 interface INavItem {
   label: string;
@@ -11,8 +12,8 @@ const Footer = () => {
   const router = useRouter();
 
   const navItems = [
-    { label: "首页", href: "/" },
-    { label: "商城", href: "/shop/home" },
+    { label: "首页", href: RouteCinfig.HomeRoute},
+    { label: "商城", href: RouteCinfig.ShopRoute },
     {
       label: "",
       icon: (
@@ -20,7 +21,7 @@ const Footer = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          strokeWidth="1.5"
           stroke="currentColor"
           className="size-30"
         >
@@ -33,8 +34,8 @@ const Footer = () => {
       ),
       href: "/add",
     },
-    { label: "消息", href: "/message/detail" },
-    { label: "我", href: "/profile/me" },
+    { label: "消息", href: RouteCinfig.MsgRoute },
+    { label: "我", href: RouteCinfig.MeRoute },
   ];
 
   const handleNavItemClick = (item: INavItem) => {

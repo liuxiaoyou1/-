@@ -1,10 +1,10 @@
-import HeaderNav from "@/app/components/Header/HeaderNav"
 
+import './index.css'
 
 const MessageDetail=()=>{
-    return <>
-    <HeaderNav></HeaderNav>
-    </>
+    return <div className="bg-black dyn-msg-h scroll-wrapper scroll Scroll">
+       
+    </div>
 }
 
 export default MessageDetail
