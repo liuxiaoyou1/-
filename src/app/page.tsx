@@ -11,7 +11,6 @@ const Page: FC = () => {
   return <>
     <HeaderNav></HeaderNav>
     <main></main>
-    <Footer></Footer>
   </>;
 };
 
