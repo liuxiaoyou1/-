@@ -1,0 +1,19 @@
+.dyn-footer{
+    width: 100%;
+    height: var(--footer-height);
+    z-index: 2;
+    top: calc(var(--vh, 1vh)* 100 - var(--footer-height));
+    background: var(--footer-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.byn-btn-ct{
+    cursor: pointer;
+    border-radius: 6rem;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    border: 3rem solid white;
+    background: #000;
+}
