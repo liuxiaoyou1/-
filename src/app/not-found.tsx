@@ -1,10 +1,5 @@
-import { FC } from "react"
+import React from "react";
 
-
-const NotFound:FC=()=>{
-    return (
-        <></>
-    )
+export default function NotFound() {
+  return <div>你访问的页面不存在1111</div>;
 }
-
-export default NotFound
