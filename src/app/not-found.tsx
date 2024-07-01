@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function NotFound() {
-  return <div>你访问的页面不存在1111</div>;
+  return <div className="text-black">你访问的页面不存在1111</div>;
 }

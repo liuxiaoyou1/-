@@ -2,7 +2,7 @@
 import React from "react";
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
-import RouteCinfig from "@/app/utils/route/config";
+import RouteConfig from "@/app/utils/route/config";
 import HomeNav from "./homeNav/page";
 import ShopNav from "./shopNav/page";
 import MsgNav from "./msgNav/page";
@@ -13,16 +13,15 @@ const HeaderNav = () => {
   const pathname = usePathname();
   const renderHeader = () => {
     switch (pathname) {
-      case RouteCinfig.HomeRoute:
+      case RouteConfig.HomeRoute:
         return <HomeNav></HomeNav>;
-      case RouteCinfig.ShopRoute:
+      case RouteConfig.ShopRoute:
          return <ShopNav></ShopNav>;
-      case RouteCinfig.MsgRoute:
+      case RouteConfig.MsgRoute:
         return <MsgNav></MsgNav>;
-      case RouteCinfig.MeRoute:
+      case RouteConfig.MeRoute:
         return <MeNav></MeNav>
       default:
-
         break;
     }
   };
